@@ -1,0 +1,97 @@
+/* Start Attrbutes  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+/* End   Attrbutes  */
+
+.container{
+    background: rgb(53,44,210);
+    background: linear-gradient(90deg, rgba(53,44,210,1) 0%, rgba(80,9,121,1) 0%, rgba(27,187,94,1) 0%, rgba(0,212,255,1) 100%);
+
+    width: 100vw;
+    min-height: 100vh;
+
+    overflow-y: auto;
+    overflow: hidden;
+    
+}
+.formContainer{
+    width: 50%;
+    text-align: center;
+}
+.formContainer form {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+.formContainer form #taskType{
+    height: 30px;
+    width: 300px;
+    outline: unset;
+    border: unset;
+    border: 1px solid black;
+    margin: 0 5px;
+
+}
+.formContainer form #submit{
+    background-color: rgb(14, 170, 149);
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    outline: unset;
+    border: unset;
+
+}
+.tasks{
+    width: 100%;
+}
+.task{
+    width: 30%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.tasks .content{
+
+    width: 80%;
+    border-right: 1px solid black;
+    padding-right: 7px;
+}
+
+.tasks .buttons{
+    width: 25%;
+}
+.tasks .buttons .button{
+    width: 20%;
+}
+.showButtons:hover > .buttons{
+    display: block;
+}
+.showMore{
+    text-align: center;
+    padding: 50px;
+}
